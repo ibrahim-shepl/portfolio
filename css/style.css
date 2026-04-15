@@ -274,6 +274,7 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     .stats-box {
@@ -296,6 +297,39 @@ footer {
         width: 95%;
         padding: 1rem;
     }
+
+    .table1,
+    .table1 thead,
+    .table1 tbody,
+    .table1 th,
+    .table1 td,
+    .table1 tr {
+        display: block;
+    }
+
+    .table1 thead {
+        display: none;
+    }
+
+    .table1 tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 0.8rem;
+        background: #fafafa;
+    }
+
+    .table1 td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    .table1 td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #3498db;
+    }
 }
 
 @media (max-width: 480px) {
@@ -305,18 +339,5 @@ footer {
 
     nav ul li {
         margin: 0.3rem 0;
-    }
-
-    .link-btn,
-    input[type="submit"] {
-        width: 100%;
-        text-align: center;
-    }
-
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form input[type="tel"],
-    .contact-form textarea {
-        font-size: 0.9rem;
     }
 }

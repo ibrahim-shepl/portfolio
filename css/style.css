@@ -271,7 +271,6 @@ footer {
     position: relative;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-wrap: nowrap;
@@ -303,7 +302,6 @@ footer {
         padding: 1rem;
     }
 
-    /* الجدول يفضل جدول عادي مع scroll */
     .table-box {
         overflow-x: auto;
     }

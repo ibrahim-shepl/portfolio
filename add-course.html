@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Add Course </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add and manage new courses with instructor details and credit hours.">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Add New Course</h1>
+        <p>Register new courses and update your learning plan easily.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Go to home page ">Home</a></li>
+            <li><a href="courses.html" title="Go to courses page">My Courses</a></li>
+            <li><a href="add-course.html" title="Go to add-course page">Add Course</a></li>
+            <li><a href="contact.html" title="Go to contact page">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <main>
+
+        <section>
+
+            <h2>Course Form</h2>
+
+            <div class="box">
+
+                <form class="course-form">
+                    <label for="courseName">Course Name:</label><br>
+                    <input id="courseName" name="courseName" type="text" placeholder="Enter Course Name"
+                        required /><br><br>
+
+                    <label for="Inst">Instructor:</label><br>
+                    <input id="Inst" name="instructor" type="text" placeholder="Instructor Name" required /><br><br>
+
+                    <label for="creditHours">Credit Hours:</label><br>
+                    <input id="creditHours" name="creditHours" type="number" min="1" max="5"
+                        placeholder="Enter Credit Hours" required /><br><br>
+
+                    <label for="note">Notes:</label><br>
+                    <textarea id="note" name="notes" rows="4" cols="30"
+                        placeholder="Any extra information about this course..."></textarea><br><br>
+
+
+                    <input type="submit" value="Add Course"><br><br>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Academic Planner. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
